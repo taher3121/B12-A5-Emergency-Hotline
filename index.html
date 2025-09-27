@@ -19,11 +19,11 @@
 
             <div class="flex gap-[10px]">
                 <div class="flex w-[123px] h-[52px] bg-[#41ff6b1a] justify-center items-center gap-[10px] rounded-[50px]">
-                    <p class="font-bold">0</p>
+                    <p id="red-heart" class="font-bold">0</p>
                     <img class="w-[30px] h-[30px]" src="/assets/heart.png" alt="">
                 </div>
                 <div class="flex w-[123px] h-[52px] bg-[#41ff6b1a] justify-center items-center gap-[10px] rounded-[50px]">
-                    <p class="font-bold">100</p>
+                    <p id="coin" class="font-bold">100</p>
                     <img class="w-[30px] h-[30px]" src="/assets/coin.png" alt="">
                 </div>
                 <div class="flex w-[123px] h-[52px] bg-[#00a63e] justify-center items-center gap-[10px] rounded-[50px] text-white">
@@ -45,7 +45,7 @@
     <main class="bg-[#f5fff6]">
         <section id="Service-container" class="grid w-11/12 mx-auto py-[10px] grid-cols-5 gap-7">
             <section id="services" class="col-span-4">
-                <div class="cart-container grid grid-cols-3 gap-8 py-[50px]  ">                
+                <div id="cart-container" class="grid grid-cols-3 gap-8 py-[50px]  ">                
                     <div id="cart-national" class="bg-white p-8 shadow-md rounded-[12px]">
                     <div class="flex items-center justify-between">
                         <div class="bg-red-300 rounded-[16px] w-[60px] h-[60px] flex items-center justify-center"><img class="w-[32px]" src="/assets/emergency.png" alt=""></div>
@@ -213,11 +213,15 @@
             </section>
             <aside id="call-history" class="bg-white col-span-1 my-[50px] shadow-lg rounded-xl">
                 <div class="flex justify-between items-center p-6">
-                    <p class="text-[20px] text-bold flex flex-row gap-[5px] items-center"> <i class="fa-regular fa-clock"></i>Call History</p>
+                    <p class="text-[20px] font-semibold flex flex-row gap-[5px] items-center"> <i class="fa-regular fa-clock"></i>Call History</p>
                     <button class="btn rounded-[50px] bg-green-600 text-white w-[114px] h-[52px]">Clear</button>
                 </div>
             </aside>
         </section>
     </main>
+
+
+
+    <script src="/index.js"></script>
 </body>
 </html>
